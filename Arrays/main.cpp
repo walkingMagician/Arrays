@@ -6,16 +6,22 @@ void main()
 {
 	setlocale(LC_ALL,  "");
 
-	int a = 5, b = 4;
-	cout << a << "   " << b;
-	a ^= b ^= a ^= b;
-	cout << a << " | " << b;
+	int a, b;
+	cout << "Перемещение местами двух переменных" << endl;
+	cout << "a = "; cin >> a;
+	cout << "b = "; cin >> b;
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;	//
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
+	cout << "-----------------------------------------------" << endl;
 
 
 
 	int n;
 	int f, s, sum = 0;
-	cin >> n;
+	cout << "Введите размер массива: ";	cin >> n;
 	int *arr = new int[n];
 	//int arr[n];
 
