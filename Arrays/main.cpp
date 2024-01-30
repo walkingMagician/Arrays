@@ -42,7 +42,11 @@ void main()
 	cout << "среднее арифметическое значение массива: " << sum_double / 2;
 
 	cout << endl;
+	int y = 0;
+	for (int i = 0; i < n; i++)
+	{
 
+	}
 
 }
 /* статического arr
