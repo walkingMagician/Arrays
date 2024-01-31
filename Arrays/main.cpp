@@ -20,7 +20,7 @@ void main()
 
 
 	int n;
-	int f, s, sum = 0;
+	int s, sum = 0;
 	cout << "Введите размер массива: ";	cin >> n;
 	int *arr = new int[n];
 	//int arr[n];
