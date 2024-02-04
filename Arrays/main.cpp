@@ -22,11 +22,11 @@ void main()
 	int n;
 	int s, sum = 0;
 	cout << "Введите размер массива: ";	cin >> n;
-	int *arr = new int[n];
-	//int arr[n];
+	int *arr = new int[n];	// обьявление динамического массива
+	
 
 	
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)	// введение элементов массива с клавиатуры 
 	{
 		cout << "arr " << i << " = ";
 		cin >> arr[i];
@@ -35,7 +35,7 @@ void main()
 
 	cout << endl;
 	cout << "вывод массива по порядку от 0-го до последнего: ";
-	for (int i = 0; i < n; i++)	cout << arr[i] << " ";
+	for (int i = 0; i < n; i++)	cout << arr[i] << " ";		
 
 	cout << endl;
 	cout << "вывод массива по порядку от последнего до  0-го: ";
@@ -47,9 +47,9 @@ void main()
 	{
 		s = arr[i];
 		sum += s;
-
 	}
 	cout << sum;
+
 	cout << endl;
 	double sum_double = sum;
 	cout << "среднее арифметическое значение массива: " << sum_double / 2;
@@ -57,10 +57,10 @@ void main()
 	cout << endl;
 	int max = arr[0];
 	int min = arr[0];
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < n; ++i)	 
 	{
-		if (arr[i] > max) max = arr[i];
-		if (arr[i] < min) min = arr[i];
+		if (arr[i] > max) max = arr[i];	// если элемент массива больше max то max равен текущиму элименту массива 
+		if (arr[i] < min) min = arr[i];	// если элемент массива меньше min то min равен текущиму элименту массива
 		
 	}
 	cout << "Максимальный элемент массива: " << max << endl;

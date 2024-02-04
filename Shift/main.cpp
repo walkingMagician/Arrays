@@ -19,6 +19,7 @@ void main()
 	cout << "Исходный массив"; 
 
 #ifdef LEFT_SHIFT	// LEFT_SHIFT
+
 	for (int i = 0; i < n; i++)	// кол-во сдвигов вправо 
 	{
 		int perviy = array[0];
@@ -42,6 +43,7 @@ void main()
 #endif
 
 #ifdef RIGHT_SHIFT	// RIGHT_SHIFT
+
 	for (int i = 0; i < n; i++)	// кол-во сдвигов вправо 
 	{
 		int posledniy = array[f - 1];	// сохранение последнего элемента
