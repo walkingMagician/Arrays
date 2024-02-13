@@ -20,7 +20,7 @@ void main()
 
 #ifdef LEFT_SHIFT	// LEFT_SHIFT
 
-	for (int i = 0; i < n; i++)	// кол-во сдвигов вправо 
+	for (int i = 0; i < n; i++)	// кол-во сдвигов влево 
 	{
 		int perviy = array[0];
 
